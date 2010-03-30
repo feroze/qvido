@@ -8,13 +8,6 @@
 *****************************************************************************/
 
 #include "qmain.h"
-#if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'qmain.h' doesn't include <QObject>."
-#elif Q_MOC_OUTPUT_REVISION != 61
-#error "This file was generated using the moc from 4.5.2. It"
-#error "cannot be used with the include files from this version of Qt."
-#error "(The moc has changed too much.)"
-#endif
 
 QT_BEGIN_MOC_NAMESPACE
 static const uint qt_meta_data_QMain[] = {
