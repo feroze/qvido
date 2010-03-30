@@ -33,6 +33,7 @@ class QMain : public QMainWindow
 public:
     QMain(std::string);
 		std::string fileLocation;
+		~QMain();
 		
 private:
 		void registerCommands();
