@@ -40,6 +40,8 @@ QMain::QMain(std::string File)
 
 }
 
+QMain::~QMain(){}
+
 void QMain::searchDialog(){
 		bool ok;
 		QString text = QInputDialog::getText(this, tr("Search Article"),

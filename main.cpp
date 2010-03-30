@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
 {
 	log_init();
 	log_debug("launching with arguments" << argv[1] );
-	if (argc == 2)
+	if (argc > 2)
 	{
 		QApplication app(argc, argv);
 
