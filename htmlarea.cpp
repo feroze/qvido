@@ -333,6 +333,10 @@ void HtmlArea::keyPressEvent(QKeyEvent *e){
 	switch (e->key()) {
 		 case Qt::Key_Right:
 				{
+// 					QPoint pos = qobject_cast<QMain *>(this->parentWidget())->cursor().pos();
+// 					qobject_cast<QMain *>(this->parentWidget())->cursor().setPos(pos.x() + 5, pos.y());
+// 					QPoint pos2 = qobject_cast<QMain *>(this->parentWidget())->cursor().pos();
+// 					log_debug("y: " << pos2.y() << " x: " << pos2.x());
 					QPoint pos = qApp->overrideCursor()->pos();
 					qApp->overrideCursor()->setPos(pos.x() + 5, pos.y());
 				}
