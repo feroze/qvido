@@ -56,4 +56,5 @@ class HtmlArea : public QTextBrowser
 		void linking( const QUrl &txt );
 		void sourceChange( const QUrl &txt );
 		void getRandom();
+		void goToTop();
 };

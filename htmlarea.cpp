@@ -108,7 +108,8 @@ void HtmlArea::setNewContent( int method, QString str = "" ){
 		//TODO build history, set Title
 		//TODO certain zimfiles break here
 		// example full german file breaks here with article "Trockenrasierer"
-		std::string content = article.getPage();
+		std::string content = "<a name=\"top\"></a>";
+		content.append(article.getPage());
 		this->setText(QString::fromUtf8(content.c_str()));
 		
 		log_debug("Text set");
@@ -150,6 +151,10 @@ void HtmlArea::searchArticle(QString term){
 	if(this->isEnabled()){
 		this->setNewContent( 2 , term);
 	}
+}
+
+void HtmlArea::goToTop(){
+	this->scrollToAnchor("#top");
 }
 
 //

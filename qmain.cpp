@@ -71,11 +71,25 @@ void QMain::registerCommands()
 		this->addAction(searchArticleAct);
 
 		//display help
-		displayHelpAct = new QAction(tr("Display &H"), this);
+		displayHelpAct = new QAction(tr("Display &Help"), this);
 		displayHelpAct->setShortcut(tr("F1"));
 		displayHelpAct->setStatusTip(tr("Display Help"));
 		connect(displayHelpAct, SIGNAL(triggered()), this, SLOT(displayHelp()));	
 		this->addAction(displayHelpAct);
+		
+		//go to top
+		goToTopAct = new QAction(tr("Display &Help"), this);
+		goToTopAct->setShortcut(tr("Ctrl+T"));
+		goToTopAct->setStatusTip(tr("Display Help"));
+		connect(goToTopAct, SIGNAL(triggered()), this->centralWidget, SLOT(goToTop()));	
+		this->addAction(goToTopAct);
+		
+		// quit qvid0
+		quitAct = new QAction(tr("Quit QVido"), this);
+		quitAct->setShortcut(tr("Ctrl+Q"));
+		quitAct->setStatusTip(tr("Quit"));
+		connect(quitAct, SIGNAL(triggered()), qApp, SLOT(quit()));	
+		this->addAction(quitAct);
 }
 
 void QMain::displayHelp(){
@@ -85,9 +99,9 @@ void QMain::displayHelp(){
 	txt.append("Ctrl + T = Go to articles top\n");
 	txt.append("Tab = Rotate through links\n");
 	txt.append("Enter = Activate link\n");
-	txt.append("Ctrl + H = Display history\n");
-	txt.append("Ctrl + B = Go back in history\n");
-	txt.append("Ctrl + F = Go forward in history\n");
+// 	txt.append("Ctrl + H = Display history\n");
+// 	txt.append("Ctrl + B = Go back in history\n");
+// 	txt.append("Ctrl + F = Go forward in history\n");
 	txt.append("Ctrl + Q = Quit Vido\n");
 	txt.append("F1 = Display this help\n");
 

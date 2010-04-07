@@ -41,6 +41,8 @@ private:
 		QAction *randomArticleAct;
 		QAction *searchArticleAct;
 		QAction *displayHelpAct;
+		QAction *quitAct;
+		QAction *goToTopAct;
 		
 private Q_SLOTS:
 		void displayHelp();
