@@ -37,7 +37,9 @@ QMain::QMain(std::string File)
 		registerCommands();
 		QObject::connect(centralWidget,SIGNAL(anchorClicked(const QUrl &)),
 										 centralWidget,SLOT(linking(const QUrl&)));
-
+		QObject::connect(centralWidget,SIGNAL(sourceChanged(const QUrl &)),
+										 centralWidget,SLOT(sourceChange(const QUrl&)));
+										 
 }
 
 QMain::~QMain(){}

@@ -23,6 +23,17 @@
 #include <zim/file.h>
 #include <zim/search.h>
 
+class UserEventFilter : public QObject
+{
+		Q_OBJECT
+
+	public:
+		UserEventFilter() : QObject() {}
+
+	protected:
+		bool eventFilter(QObject *obj, QEvent *event);
+};
+
 class HtmlArea : public QTextBrowser
 {
 	Q_OBJECT
@@ -32,14 +43,17 @@ class HtmlArea : public QTextBrowser
 		void searchArticle(QString term);
 
 	private:
-		QString *url;
+		QString url;
+		QObject filter;
 		zim::Article getArticleFromUrl(QString url);
 		zim::Search::Results searchArticleFromTitle(QString phrase);
 		zim::Article getRandomArticle();
 		const zim::File& get_file();
 		void setNewContent( int method, QString str );
-
+		QVariant loadResource(int type, const QUrl &name);
+		
 	public Q_SLOTS:
 		void linking( const QUrl &txt );
+		void sourceChange( const QUrl &txt );
 		void getRandom();
 };
