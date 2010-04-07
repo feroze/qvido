@@ -23,6 +23,10 @@
 #include <QMessageBox>
 #include "qmain.h"
 
+#include <cxxtools/log.h>
+
+log_define("qvido.qmain");
+
 QMain::QMain(std::string File)
 {
 		
@@ -39,7 +43,14 @@ QMain::QMain(std::string File)
 										 centralWidget,SLOT(linking(const QUrl&)));
 		QObject::connect(centralWidget,SIGNAL(sourceChanged(const QUrl &)),
 										 centralWidget,SLOT(sourceChange(const QUrl&)));
-										 
+		
+		QCursor cursor;
+		
+		if (qApp->overrideCursor() == false){
+			qApp->setOverrideCursor(cursor);
+			log_debug("no cursor");
+		}
+
 }
 
 QMain::~QMain(){}
@@ -84,7 +95,7 @@ void QMain::registerCommands()
 		connect(goToTopAct, SIGNAL(triggered()), this->centralWidget, SLOT(goToTop()));	
 		this->addAction(goToTopAct);
 		
-		// quit qvid0
+		// quit qvido
 		quitAct = new QAction(tr("Quit QVido"), this);
 		quitAct->setShortcut(tr("Ctrl+Q"));
 		quitAct->setStatusTip(tr("Quit"));

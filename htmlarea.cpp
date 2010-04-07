@@ -115,9 +115,9 @@ void HtmlArea::setNewContent( int method, QString str = "" ){
 		log_debug("Text set");
 // 		log_debug("index: " << article.getIndex());
 // 		log_debug("enabled: " << this->isEnabled());
-		log_debug("string: " << str.toUtf8().data());
 		qApp->processEvents();
 		qobject_cast<QMain *>(this->parentWidget())->setEnabled(true);
+		log_debug("string: " << str.toUtf8().data());
 		
 	}else{
 		this->setText(current);
@@ -323,4 +323,41 @@ zim::Search::Results HtmlArea::searchArticleFromTitle(QString phrase)
     search.find(result, ns, terms);
 		log_debug("term :" << phrase.toUtf8().data());
 		return result;
+}
+
+///////////////////////////////////
+// functions related to navigation
+
+void HtmlArea::keyPressEvent(QKeyEvent *e){
+	log_debug("key pressed");
+	switch (e->key()) {
+		 case Qt::Key_Right:
+				{
+					QPoint pos = qApp->overrideCursor()->pos();
+					qApp->overrideCursor()->setPos(pos.x() + 5, pos.y());
+				}
+				return;
+				
+			case Qt::Key_Left:
+				{
+					QPoint pos = qApp->overrideCursor()->pos();
+					qApp->overrideCursor()->setPos(pos.x() - 5, pos.y());
+				}
+				return;
+				
+			case Qt::Key_Down:
+				{
+					QPoint pos = qApp->overrideCursor()->pos();
+					qApp->overrideCursor()->setPos(pos.x(), pos.y() + 5);
+				}
+				return;
+				
+			case Qt::Key_Up:
+				{
+					QPoint pos = qApp->overrideCursor()->pos();
+					qApp->overrideCursor()->setPos(pos.x(), pos.y() - 5);
+				}
+				return;
+	}
+	QTextBrowser::keyPressEvent(e);
 }

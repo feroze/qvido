@@ -52,6 +52,9 @@ class HtmlArea : public QTextBrowser
 		void setNewContent( int method, QString str );
 		QVariant loadResource(int type, const QUrl &name);
 		
+	protected:
+		virtual void keyPressEvent(QKeyEvent *e);
+		
 	public Q_SLOTS:
 		void linking( const QUrl &txt );
 		void sourceChange( const QUrl &txt );
