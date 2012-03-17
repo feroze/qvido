@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/!svn/ver/363/trunk/zimlib/include/zim
+END
+fileiterator.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/!svn/ver/326/trunk/zimlib/include/zim/fileiterator.h
+END
+error.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/!svn/ver/286/trunk/zimlib/include/zim/error.h
+END
+endian.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/!svn/ver/317/trunk/zimlib/include/zim/endian.h
+END
+inflatestream.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/!svn/ver/286/trunk/zimlib/include/zim/inflatestream.h
+END
+refcounted.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/!svn/ver/286/trunk/zimlib/include/zim/refcounted.h
+END
+zim.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/!svn/ver/329/trunk/zimlib/include/zim/zim.h
+END
+zintstream.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/!svn/ver/286/trunk/zimlib/include/zim/zintstream.h
+END
+fileimpl.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/!svn/ver/363/trunk/zimlib/include/zim/fileimpl.h
+END
+fstream.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/!svn/ver/363/trunk/zimlib/include/zim/fstream.h
+END
+bzip2stream.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/!svn/ver/286/trunk/zimlib/include/zim/bzip2stream.h
+END
+cache.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/!svn/ver/286/trunk/zimlib/include/zim/cache.h
+END
+bunzip2stream.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/!svn/ver/286/trunk/zimlib/include/zim/bunzip2stream.h
+END
+search.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/!svn/ver/308/trunk/zimlib/include/zim/search.h
+END
+uuid.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/!svn/ver/286/trunk/zimlib/include/zim/uuid.h
+END
+articlesearch.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/!svn/ver/286/trunk/zimlib/include/zim/articlesearch.h
+END
+noncopyable.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/!svn/ver/286/trunk/zimlib/include/zim/noncopyable.h
+END
+indexarticle.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/!svn/ver/286/trunk/zimlib/include/zim/indexarticle.h
+END
+template.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/!svn/ver/286/trunk/zimlib/include/zim/template.h
+END
+smartptr.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/!svn/ver/286/trunk/zimlib/include/zim/smartptr.h
+END
+blob.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/!svn/ver/286/trunk/zimlib/include/zim/blob.h
+END
+file.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/!svn/ver/363/trunk/zimlib/include/zim/file.h
+END
+lzmastream.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/!svn/ver/286/trunk/zimlib/include/zim/lzmastream.h
+END
+deflatestream.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/!svn/ver/286/trunk/zimlib/include/zim/deflatestream.h
+END
+cluster.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/!svn/ver/286/trunk/zimlib/include/zim/cluster.h
+END
+unlzmastream.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/!svn/ver/286/trunk/zimlib/include/zim/unlzmastream.h
+END
+article.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/!svn/ver/286/trunk/zimlib/include/zim/article.h
+END
+dirent.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/!svn/ver/348/trunk/zimlib/include/zim/dirent.h
+END
+bzip2.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/!svn/ver/286/trunk/zimlib/include/zim/bzip2.h
+END
+unicode.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/!svn/ver/316/trunk/zimlib/include/zim/unicode.h
+END
+fileheader.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/!svn/ver/333/trunk/zimlib/include/zim/fileheader.h
+END
